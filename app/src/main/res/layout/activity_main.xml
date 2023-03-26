@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#F18B8B"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WINNER X : "
+            android:textSize="25dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/nox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WINNER O : "
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/noo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3">
+
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/teal_200"
+            android:onClick="check" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btn2"
+            android:onClick="check"
+            android:backgroundTint="@color/teal_200"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/btn3"
+            android:onClick="check"
+            android:backgroundTint="@color/teal_200"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/btn4"
+            android:onClick="check"
+            android:backgroundTint="@color/teal_200"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btn5"
+            android:onClick="check"
+            android:backgroundTint="@color/teal_200"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/btn6"
+            android:onClick="check"
+            android:backgroundTint="@color/teal_200"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/btn7"
+            android:onClick="check"
+            android:backgroundTint="@color/teal_200"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btn8"
+            android:onClick="check"
+            android:backgroundTint="@color/teal_200"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/btn9"
+            android:onClick="check"
+            android:backgroundTint="@color/teal_200"/>
+
+    </GridLayout>
+    <Button
+        android:id="@+id/re"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="RESTART"
+        android:backgroundTint="@color/black"
+        />
+
+</LinearLayout>
